@@ -1,8 +1,8 @@
 const Display = (props) => {
-return(
+  return (
     <div id="display">
-        <p>{props.value}</p>
+      <p>{props.value}</p>
     </div>
-)
-}
-export default Display
+  );
+};
+export default Display;
