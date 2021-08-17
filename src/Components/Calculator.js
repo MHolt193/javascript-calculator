@@ -41,7 +41,18 @@ class Calculator extends React.Component {
         display: this.state.display + event.target.innerText,
         num2: "-" + event.target.innerText,
       });
-    } else if (this.state.operator !== "" && this.state.num2 === "0") {
+    }else if (
+      this.state.operator !== "" &&
+      this.state.operator === "-" &&
+      this.state.display.charAt(this.state.display.length - 2) === "-" &&
+      this.state.num2 === "0"
+    ) {
+      this.setState({
+        display: this.state.display + event.target.innerText,
+        num2: "-" + event.target.innerText,
+      });
+    }
+     else if (this.state.operator !== "" && this.state.num2 === "0") {
       this.setState({
         display: this.state.display + event.target.innerText,
         num2: event.target.innerText,
