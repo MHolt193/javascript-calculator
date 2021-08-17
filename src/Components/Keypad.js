@@ -106,7 +106,7 @@ const Keypad = (props) => {
           </ButtonGroup>
         </Col>
       </Row>
-      
+
       <Row>
         <Col>
           <ButtonGroup className="button-group">
