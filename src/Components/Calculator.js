@@ -2,6 +2,7 @@ import React from "react";
 import Display from "./Display";
 import Keypad from "./Keypad";
 import Container from "react-bootstrap/Container";
+import Footer from "./Footer";
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -205,6 +206,7 @@ class Calculator extends React.Component {
           decimalHandler={this.decimalHandler}
           subtractClickHandler={this.subtractClickHandler}
         />
+        <Footer />
       </Container>
     );
   }
