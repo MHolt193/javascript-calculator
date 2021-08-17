@@ -2,44 +2,54 @@ import { ButtonGroup } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import "./Keypad.css";
 
 const Keypad = (props) => {
   return (
-    <div>
+    <Container className="key-pad">
       <Row>
         <Col>
-          <Button variant="primary" id="clear" onClick={props.clearHandler}>
-            C
-          </Button>
+          <ButtonGroup className="button-group">
+            <Button variant="primary" id="clear" onClick={props.clearHandler}>
+              C
+            </Button>
+            <Button
+              variant="primary"
+              id="add"
+              onClick={props.operatorClickHandler}
+            >
+              +
+            </Button>
+            <Button
+              variant="primary"
+              id="subtract"
+              onClick={props.subtractClickHandler}
+            >
+              -
+            </Button>
+
+            <Button
+              variant="primary"
+              id="multiply"
+              onClick={props.operatorClickHandler}
+            >
+              x
+            </Button>
+            <Button
+              variant="primary"
+              id="divide"
+              onClick={props.operatorClickHandler}
+            >
+              &#247;
+            </Button>
+          </ButtonGroup>
         </Col>
       </Row>
-      <Button
-        variant="primary"
-        id="subtract"
-        onClick={props.subtractClickHandler}
-      >
-        -
-      </Button>
-      <Button variant="primary" id="add" onClick={props.operatorClickHandler}>
-        +
-      </Button>
-      <Button
-        variant="primary"
-        id="multiply"
-        onClick={props.operatorClickHandler}
-      >
-        x
-      </Button>
-      <Button
-        variant="primary"
-        id="divide"
-        onClick={props.operatorClickHandler}
-      >
-        &#247;
-      </Button>
+
       <Row>
         <Col>
-          <ButtonGroup>
+          <ButtonGroup className="button-group">
             <Button
               variant="primary"
               id="seven"
@@ -60,9 +70,10 @@ const Keypad = (props) => {
           </ButtonGroup>
         </Col>
       </Row>
+
       <Row>
         <Col>
-          <ButtonGroup>
+          <ButtonGroup className="button-group">
             <Button variant="primary" id="four" onClick={props.numClickHandler}>
               4
             </Button>
@@ -75,9 +86,10 @@ const Keypad = (props) => {
           </ButtonGroup>
         </Col>
       </Row>
+
       <Row>
         <Col>
-          <ButtonGroup>
+          <ButtonGroup className="button-group">
             <Button variant="primary" id="one" onClick={props.numClickHandler}>
               1
             </Button>
@@ -94,18 +106,19 @@ const Keypad = (props) => {
           </ButtonGroup>
         </Col>
       </Row>
+      
       <Row>
         <Col>
-          <ButtonGroup>
-            <Button variant="primary" id="zero" onClick={props.numClickHandler}>
-              0
-            </Button>
+          <ButtonGroup className="button-group">
             <Button
               variant="primary"
               id="decimal"
               onClick={props.decimalHandler}
             >
               .
+            </Button>
+            <Button variant="primary" id="zero" onClick={props.numClickHandler}>
+              0
             </Button>
             <Button
               variant="primary"
@@ -117,7 +130,7 @@ const Keypad = (props) => {
           </ButtonGroup>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 export default Keypad;

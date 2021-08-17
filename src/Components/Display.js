@@ -1,6 +1,7 @@
+import "./Display.css"
 const Display = (props) => {
   return (
-    <div id="display">
+    <div className="display" id="display">
       <p>{props.value}</p>
     </div>
   );

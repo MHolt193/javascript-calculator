@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.display {
+  margin-top: 120px;
+  background: rgb(101, 135, 133);
+  background: -moz-linear-gradient(
+    150deg,
+    rgba(101, 135, 133, 1) 7%,
+    rgba(188, 214, 214, 1) 41%,
+    rgba(149, 205, 205, 1) 61%
+  );
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(101, 135, 133, 1) 7%,
+    rgba(188, 214, 214, 1) 41%,
+    rgba(149, 205, 205, 1) 61%
+  );
+  background: linear-gradient(
+    150deg,
+    rgba(101, 135, 133, 1) 7%,
+    rgba(188, 214, 214, 1) 41%,
+    rgba(149, 205, 205, 1) 61%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#658785",endColorstr="#95cdcd",GradientType=1);
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  color: rgb(231, 231, 231);
+  padding-top: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  box-shadow: inset 0px 0px 15px black;
+}
+.display p {
+  letter-spacing: -3px;
+}
+

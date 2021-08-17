@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
-import Container from 'react-bootstrap/Container'
-import Calculator from './Components/Calculator';
+import React from "react";
+import "./App.css";
+import Container from "react-bootstrap/Container";
+import Calculator from "./Components/Calculator";
 
 function App() {
   return (

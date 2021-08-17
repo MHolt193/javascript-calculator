@@ -1,12 +1,34 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 1) 7%,
+    rgba(80, 80, 80, 1) 27%,
+    rgba(29, 29, 29, 1) 45%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 1) 7%,
+    rgba(80, 80, 80, 1) 27%,
+    rgba(29, 29, 29, 1) 45%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 1) 7%,
+    rgba(80, 80, 80, 1) 27%,
+    rgba(29, 29, 29, 1) 45%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#1d1d1d",GradientType=1);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
